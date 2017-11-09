@@ -8,7 +8,7 @@ import { ShopsRoutes } from './shops.routing';
 import { NewComponent } from './new/new.component';
 import { AllComponent } from './all/all.component';
 import { ViewComponent } from './view/view.component';
-
+import { InrevisionComponent } from './inrevision/inrevision.component';
 
 
 @NgModule({
@@ -22,6 +22,7 @@ import { ViewComponent } from './view/view.component';
       NewComponent,
       AllComponent,
       ViewComponent,
+      InrevisionComponent
   ]
 })
 

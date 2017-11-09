@@ -130,5 +130,8 @@ export class DatabaseService {
   getAdmin(uid: string){
     return this.db.object('/admins/'+uid);
   }
+  changeShopStatus(uid:string, status: string){
+    return this.db.database.ref().child('commerces').child(uid).child('status').set(status);
+  }
 }
 

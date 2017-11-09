@@ -10,6 +10,7 @@ export const ROUTES: RouteInfo[] = [
 
     { path: '/shops/new', title: 'Nuevo', icon: 'material-icons' },
     { path: '/shops/all', title: 'Todos', icon: 'material-icons' },
+    { path: '/shops/inrevision', title: 'Revision', icon: 'material-icons' },
     { path: '/components/panels', title: 'Panels', icon:'pe-7s-plugin' },
     { path: '/components/sweet-alert', title: 'Sweet Alert', icon:'pe-7s-plugin' },
     { path: '/components/notifications', title: 'Notifications', icon:'pe-7s-plugin' },
