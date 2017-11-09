@@ -1,0 +1,73 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <form #f="ngForm" novalidate (ngSubmit)="onSubmit()">
+                            <div class="card-header card-header-icon" data-background-color="rose">
+                                    <i class="material-icons">mail_outline</i>
+                                </div>
+                                <h4 class="card-title">Categoria</h4>
+                        
+                           
+                            <div class="card-content">
+                                
+                                    <div class="col-md-6">
+                                <div class="form-group label-floating">
+                                    <label class="control-label" for="">Identificador(ingles):
+                                        <span class="star">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" name="name" [(ngModel)]="category.name"
+                                    required>
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label" for="">Nombre a mostrar:
+                                        <span class="star">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" name="display_name" [(ngModel)]="category.display_name"
+                                    required  >
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label" for="">Color (RGBA):
+                                        <span class="star">*</span>
+                                    </label>
+                                    <input type="color" class="form-control" name="color" [(ngModel)]="category.color"
+                                    required >
+                                </div>
+                            </div>
+                            <div class="col-md-6 centerC">
+                            <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                <div class="fileinput-new thumbnail img-circle">
+                                    <img src="../../assets/img/placeholder.jpg" alt="...">
+                                </div>
+                                <div class="fileinput-preview fileinput-exists thumbnail img-circle"></div>
+                                <div>
+                                    <span class="btn btn-round btn-rose btn-file">
+                                        <span class="fileinput-new">Agregar Foto</span>
+                                        <span class="fileinput-exists">Cambiar</span>
+                                        <input type="file" id="input-file" name="..." /></span>
+                                    <br />
+                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Quitar</a>
+                                </div>
+                            </div>
+                            <div class="category form-category">
+                                    <span class="star">*</span> Campos Obligatorios</div>
+                                <div class="form-footer text-right">
+                        </div>
+                            
+           
+                                <div class="form-group">
+
+                                    <button type="submit" class="btn btn-rose btn-fill btn-wd" [disabled]="!f.valid">Crear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+          
+        </div>
+    </div>
+</div>
